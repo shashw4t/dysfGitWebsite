@@ -35,12 +35,6 @@ const Projects: React.FC = () => {
         </div>
         <div className="col-md-6">
           <Project
-            title="Bank Database Design Project"
-            body="Designed a small database system, created and populated this database using ORACLE for a Database Management Systems Design Term Project."
-          />
-        </div>
-        <div className="col-md-6">
-          <Project
             title="Wikipedia Spark Analysis"
             body="Used Spark via Python to process data, analyze trends and identified most popular language by obtaining results from 1.2 billion words from Wikipedia pages."
           />
@@ -49,12 +43,6 @@ const Projects: React.FC = () => {
           <Project
             title="Generative Adversarial Network"
             body="Constructed a GAN for cartoon face generation using Torchvision to manipulate the images. Built a Wasserstein GAN to run the 10,000 images through a generator and discriminator composed of CNNs."
-          />
-        </div>
-        <div className="col-md-6">
-          <Project
-            title="Another Project Title"
-            body="A brief description of another project you’ve worked on, detailing the technology stack used and the key achievements."
           />
         </div>
       </div>
