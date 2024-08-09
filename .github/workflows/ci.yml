@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]  # Run on pushes to the main branch
+  pull_request:
+    branches: [ "main" ]  # Run on pull requests to the main branch
+  workflow_dispatch:  # Allow manual triggering of the workflow
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'  # Use Node.js version 16
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run tests
+      run: npm test
+
+    - name: Lint code
+      run: npm run lint
+
+    - name: Build project
+      run: npm run build
+
+    # Optional: Deploy if needed
+    # - name: Deploy
+    #   run: npm run deploy
+
+    - name: Upload production-ready build files as artifact
+      if: success()  # Only upload if the build is successful
+      uses: actions/upload-artifact@v3
+      with:
+        name: build-artifacts
+        path: build/
