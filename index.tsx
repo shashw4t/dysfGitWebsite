@@ -1,7 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from '<react-dom />client';
 import App from './App';
-import './index.css';
+import './index.css'; // Keep the custom CSS for additional styling
 
 const rootElement = document.getElementById('root');
 if (rootElement) {

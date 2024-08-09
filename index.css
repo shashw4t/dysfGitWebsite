@@ -61,6 +61,7 @@ p {
 /* Section styles */
 section {
   padding: 60px 0;
+  border-bottom: 1px solid #eee;
 }
 
 /* Button styling */
@@ -74,4 +75,24 @@ button {
 button:hover {
   background-color: #ff833b;
   color: white;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+  }
+
+  section {
+    padding: 40px 0;
+  }
 }
