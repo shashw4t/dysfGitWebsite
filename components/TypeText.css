@@ -1,0 +1,34 @@
+button {
+    height: 10vh;
+    width: 20vw;
+    margin-bottom: 2.5vh;
+    font-size: 2.5vw;
+    font-family: "Raleway", sans-serif;
+    outline: none;
+    background: rgba(255, 255, 255, 0);
+    color: white;
+    padding: 0;
+    border: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+    color: #ff833b;
+}
+
+button:focus {
+    outline: none;
+}
+
+.initial {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.initial.show {
+    opacity: 1;
+    visibility: visible;
+}

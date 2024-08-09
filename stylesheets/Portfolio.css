@@ -1,0 +1,75 @@
+
+/* General container for the projects section */
+.projects {
+    position: relative;
+    width: 100%;
+    background-color: #f5f5f5; /* Light background for contrast */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Style for the floating navigation bar */
+.FloatRight {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.NavBar {
+    display: flex;
+    flex-direction: column;
+}
+
+.NavBarLink {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #ff833b;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.NavBarLink:hover {
+    background-color: #fff;
+    color: #ff833b;
+    border: 2px solid #ff833b;
+}
+
+/* Style for individual project containers */
+.projectTemp, .quote {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Style for different background sections */
+.projectTemp {
+    background-color: #fff; /* Light background for contrast */
+}
+
+.quote {
+    background-color: rgb(39, 39, 39); /* Dark background for contrast */
+    color: white;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .FloatRight {
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    .NavBar {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .NavBarLink {
+        margin: 5px;
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,77 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Raleway', sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: 'Raleway', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: #333;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.navbar {
+  width: 100%;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  margin-left: 20px;
+}
+
+.navbar a:hover {
+  color: #ff833b;
+}
+
+/* Section styles */
+section {
+  padding: 60px 0;
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #ff833b;
+  color: white;
+}

@@ -1,0 +1,68 @@
+.picContainer {
+    height:100vh;
+    margin-left: 5vh;
+    overflow:hidden;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.pic {
+    object-fit: cover;
+    object-position: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.lottieContainer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.infoContainer {
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    background-color: clear;
+    height:90vh;
+    margin:5vh;
+}
+
+.title {
+    text-align: center;
+    font-family:"Raleway";
+    font-size: 5vw;
+    color: rgb(0, 225, 255);
+    margin: 0;
+}
+
+.description {
+    background-color: rgba(0, 196, 222, 0.274);
+    margin-top: 5vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    padding:1vw;
+    font-size: 2vw;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.links {
+    position: relative;
+    bottom: 100vh;
+    left: 30%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 4vw;
+}
+
+.button {
+    width: 40%;
+    height: 7.5vh;
+    background-color: rgba(51, 64, 74, 0.863);
+    font-size: 1.5vw;
+}
+
+.button:hover {
+    color: rgba(51, 64, 74);
+    background-color: rgba(255, 255, 255, 0.863);
+}
