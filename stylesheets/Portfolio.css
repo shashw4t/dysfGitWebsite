@@ -1,9 +1,8 @@
-
 /* General container for the projects section */
 .projects {
     position: relative;
     width: 100%;
-    background-color: #f5f5f5; /* Light background for contrast */
+    background-color: #f5f5f5;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -47,15 +46,14 @@
 
 /* Style for different background sections */
 .projectTemp {
-    background-color: #fff; /* Light background for contrast */
+    background-color: #fff;
 }
 
 .quote {
-    background-color: rgb(39, 39, 39); /* Dark background for contrast */
+    background-color: rgb(39, 39, 39);
     color: white;
 }
 
-/* Responsive Design Adjustments */
 @media (max-width: 768px) {
     .FloatRight {
         position: static;

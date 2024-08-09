@@ -7,8 +7,8 @@
     padding: 0 20px;
     background-color: #333;
     color: white;
-    height: 60px; /* Adjust height as needed */
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+    height: 60px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-brand {
@@ -29,14 +29,13 @@
 }
 
 .navbar-links a:hover {
-    color: #ff833b; /* Color on hover */
+    color: #ff833b;
 }
 
-/* Responsive Design Adjustments */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        height: auto; /* Adjust height for mobile view */
+        height: auto;
         padding: 10px;
     }
 

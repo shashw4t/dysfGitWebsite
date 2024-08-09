@@ -1,121 +1,121 @@
 .experience {
-    position: absolute;
-    margin: 2.5vw;
-    top: 0;
-    right: 5vw;
-    width: 30vw;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: absolute;
+  margin: 2.5vw;
+  top: 0;
+  right: 5vw;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .listOfLinks {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    color: white;
-    bottom: 0;
-    left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: white;
+  bottom: 0;
+  left: 0;
 }
 
 .hotLink {
-    margin-right: 0;
-    margin-bottom: 1vw;
-    color: black;
-    height: 3vh;
-    width: 6vw;
-    margin-top: 1vh;
-    font-size: 1vw;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  margin-right: 0;
+  margin-bottom: 1vw;
+  color: black;
+  height: 3vh;
+  width: 6vw;
+  margin-top: 1vh;
+  font-size: 1vw;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .hotLink:hover {
-    color: rgb(0, 162, 255);
+  color: rgb(0, 162, 255);
 }
 
 .image {
-    width:100%;
-    object-fit:cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
+
 .titlemap {
-    text-align: left;
-    color: black;
-    margin: 0;
-    padding-left: 1vw;
-    padding-top: 3vh;
-    font-size: 4vw;
-    font-weight: 300;
-    color: rgb(59, 59, 59);
+  text-align: left;
+  color: black;
+  margin: 0;
+  padding-left: 1vw;
+  padding-top: 3vh;
+  font-size: 4vw;
+  font-weight: 300;
+  color: rgb(59, 59, 59);
 }
 
 .text {
-    padding-left: 1vw;
-    padding-right: 1vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
 }
 
 .experiencePicker {
-    position: absolute;
-    margin: 2.5vw;
-    top: 0;
-    left: 0;
-    width: 50vw;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: absolute;
+  margin: 2.5vw;
+  top: 0;
+  left: 0;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .searchBar {
-    width: 100%;
-    color: black;
-    background-color: clear;
-    font-size: 20px;
-    text-align: left;
-    height: 50px;
-    margin:0;
-    padding-left: 1vw;
-    border-radius: 10px;
-    border-style: none;
-    display: flex;
-    align-items: center;
+  width: 100%;
+  color: black;
+  font-size: 20px;
+  text-align: left;
+  height: 50px;
+  margin: 0;
+  padding-left: 1vw;
+  border-radius: 10px;
+  border-style: none;
+  display: flex;
+  align-items: center;
 }
 
 .selected:focus {
-    border-bottom: 1px solid rgb(204, 204, 204);
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+  border-bottom: 1px solid rgb(204, 204, 204);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .searchBar:hover {
-    color: black;
-    background-color: white;
+  color: black;
+  background-color: white;
 }
 
-.search{
-    font-size: 15px;
-    padding-left: 1vw;
+.search {
+  font-size: 15px;
+  padding-left: 1vw;
 }
 
 .search:hover {
-    background-color: aliceblue;
+  background-color: aliceblue;
 }
 
-.hamburgerIcon{
-    height: 20px;
-    width: 20px;
-    margin-right: 10px;
-    margin-left: 10px;
+.hamburgerIcon {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
-.locationIcon{
-    height: 20px;
-    width: 20px;
-    margin-right: 12px;
-    margin-left: 10px;
+.locationIcon {
+  height: 20px;
+  width: 20px;
+  margin-right: 12px;
+  margin-left: 10px;
 }

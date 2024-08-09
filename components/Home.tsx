@@ -1,4 +1,58 @@
 import React from 'react';
+
+const Home: React.FC = () => {
+  return (
+    <div>
+      <header className="jumbotron text-center">
+        <h1 className="display-4 header-title">Shashwat Singh</h1>
+        <p className="lead header-subtitle">Software Engineer & Data Scientist</p>
+        <p><a href="mailto:shashwat.singh98@gmail.com">shashwat.singh98@gmail.com</a> | 732-210-7862</p>
+        <p><a href="https://linkedin.com/in/shashwat">LinkedIn Profile</a></p>
+      </header>
+
+      <section id="summary" className="container">
+        <h2 className="section-title">Summary</h2>
+        <p>With a Master’s degree in Data Science from NJIT and a solid Computer Science foundation from Rutgers University, I leverage extensive experience in Java, SQL, and full-stack development. Currently, at HTD Talent, I enhance client projects by delivering tailored software solutions, including a versatile reservation system. I am adept at translating complex technology into practical applications for diverse clients.</p>
+      </section>
+
+      <section id="experience" className="container">
+        <h2 className="section-title">Experience</h2>
+        <div className="card mb-3">
+          <div className="card-body">
+            <h5 className="card-title">Software Engineer (SWE)</h5>
+            <h6 className="card-subtitle mb-2 text-muted">HTD Talent (Jul 2024 - Present)</h6>
+            <ul>
+              <li><strong>Training:</strong> Delivered two intensive 5-week programs on Java, OOP, SQL, Docker, and MVC.</li>
+              <li><strong>Projects:</strong> Developed a versatile reservation system and a comprehensive full-stack website.</li>
+              <li><strong>Deployment:</strong> Successfully deployed tailored software solutions to client sites.</li>
+              <li><strong>Impact:</strong> Leveraged advanced skills to drive significant improvements in client projects.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" className="container">
+        <h2 className="section-title">Education</h2>
+        <div className="card mb-3">
+          <div className="card-body">
+            <h5 className="card-title">Master's Degree in Data Science</h5>
+            <h6 className="card-subtitle mb-2 text-muted">New Jersey Institute of Technology (NJIT)</h6>
+            <p className="card-text">Completed in 2022</p>
+          </div>
+        </div>
+        <div className="card mb-3">
+          <div className="card-body">
+            <h5 className="card-title">Bachelor's Degree in Computer Science</h5>
+            <h6 className="card-subtitle mb-2 text-muted">Rutgers University @ New Brunswick</h6>
+            <p className="card-text">Completed in 2020</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Home;import React from 'react';
 import TypeText from './TypeText';
 import HomeBackground from '../assets/pictures/homebackground.png';
 import Ground from '../assets/pictures/ground.png';
