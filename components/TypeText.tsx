@@ -74,22 +74,21 @@ class TypeText extends React.Component<TypeTextProps, TypeTextState> {
           {displayedText}
         </h1>
         <div style={{ marginLeft: "5vw", display: "flex", flexDirection: "column" }}>
-        <Link to='/aboutme'>
-    <button className={`btn btn-link ${showButtons[0]}`} style={{ height: '10vh', width: '20vw', fontSize: '2.5vw', color: 'white' }}>About Me</button>
-</Link>
-<Link to='/projects'>
-    <button className={`btn btn-link ${showButtons[1]}`} style={{ height: '10vh', width: '20vw', fontSize: '2.5vw', color: 'white' }}>Projects</button>
-</Link>
-<Link to='/workexperience'>
-    <button className={`btn btn-link ${showButtons[2]}`} style={{ height: '10vh', width: '20vw', fontSize: '2.5vw', color: 'white' }}>Work</button>
-</Link>
-<Link to='/photography'>
-    <button className={`btn btn-link ${showButtons[3]}`} style={{ height: '10vh', width: '20vw', fontSize: '2.5vw', color: 'white' }}>Photography</button>
-</Link>
-<Link to='/contact'>
-    <button className={`btn btn-link ${showButtons[4]}`} style={{ height: '10vh', width: '20vw', fontSize: '2.5vw', color: 'white' }}>Contact</button>
-</Link>
-
+          <Link to='/aboutme'>
+            <button className={`btn btn-link ${showButtons[0]}`} style={{ height: '10vh', width: '20vw', fontSize: '2.5vw', color: 'white' }}>About Me</button>
+          </Link>
+          <Link to='/projects'>
+            <button className={`btn btn-link ${showButtons[1]}`} style={{ height: '10vh', width: '20vw', fontSize: '2.5vw', color: 'white' }}>Projects</button>
+          </Link>
+          <Link to='/workexperience'>
+            <button className={`btn btn-link ${showButtons[2]}`} style={{ height: '10vh', width: '20vw', fontSize: '2.5vw', color: 'white' }}>Work</button>
+          </Link>
+          <Link to='/photography'>
+            <button className={`btn btn-link ${showButtons[3]}`} style={{ height: '10vh', width: '20vw', fontSize: '2.5vw', color: 'white' }}>Photography</button>
+          </Link>
+          <Link to='/contact'>
+            <button className={`btn btn-link ${showButtons[4]}`} style={{ height: '10vh', width: '20vw', fontSize: '2.5vw', color: 'white' }}>Contact</button>
+          </Link>
         </div>
       </div>
     );
