@@ -48,83 +48,43 @@ class Home extends React.Component<WelcomeProp, WelcomeState> {
   _onMouseMove(e: any) {
     const mousex = e.screenX;
     const mousey = e.screenY;
-    this.setState({ x: e.screenX, y: e.screenY });
+    const centerx = window.innerWidth / 2;
+    const centery = window.innerHeight / 2;
+    const rightProportion = (mousex - centerx) / centerx;
+    const leftProportion = (centerx - mousex) / centerx;
+    const topProportion = (centery - mousey) / centery;
+    const bottomProportion = (mousey - centery) / centery;
     this.setState({
-      leftProportion: mousex > this.state.centerx ? (mousex - this.state.centerx) / this.state.centerx : 0,
-      rightProportion: mousex < this.state.centerx ? (this.state.centerx - mousex) / this.state.centerx : 0,
-      topProportion: mousey > this.state.centery ? (mousey - this.state.centery) / this.state.centery : 0,
-      bottomProportion: mousey < this.state.centery ? (this.state.centery - mousey) / this.state.centery : 0,
+      x: mousex,
+      y: mousey,
+      centerx: centerx,
+      centery: centery,
+      rightProportion: rightProportion,
+      leftProportion: leftProportion,
+      topProportion: topProportion,
+      bottomProportion: bottomProportion,
     });
   }
 
   _updateWindowDimensions() {
-    this.setState({ centerx: window.innerWidth / 2, centery: window.innerHeight / 2 });
+    const centerx = window.innerWidth / 2;
+    const centery = window.innerHeight / 2;
+    this.setState({
+      centerx: centerx,
+      centery: centery,
+    });
   }
 
   render() {
     return (
-      <div onMouseMove={this._onMouseMove} className="position-relative vh-100 vw-100 overflow-hidden">
-        <Navbar /> {/* Add Navbar component */}
-        <div className="position-absolute w-100 h-100">
-          <img
-            src={HomeBackground}
-            className="w-100 h-100"
-            style={{
-              objectFit: "cover",
-              objectPosition: "center",
-              overflow: "hidden",
-            }}
-            alt="Background"
-          />
-        </div>
-        <div
-          className="position-absolute w-100 h-100"
-          style={{
-            overflow: "hidden",
-            right: this.state.rightProportion ? this.state.rightProportion * this.state.shift / 3 : undefined,
-            left: this.state.leftProportion ? this.state.leftProportion * this.state.shift / 3 : undefined,
-            bottom: this.state.bottomProportion ? this.state.bottomProportion * this.state.shift / 3 : undefined,
-          }}
-        >
-          <img
-            src={Ground}
-            className="w-100 h-100"
-            style={{
-              objectFit: "cover",
-              objectPosition: "center",
-              overflow: "hidden",
-            }}
-            alt="Ground"
-          />
-        </div>
-        <div
-          className="position-absolute w-100 h-100"
-          style={{
-            overflow: "hidden",
-            right: this.state.rightProportion ? this.state.rightProportion * this.state.shift : undefined,
-            left: this.state.leftProportion ? this.state.leftProportion * this.state.shift : undefined,
-            top: this.state.topProportion ? this.state.topProportion * this.state.shift : undefined,
-            bottom: this.state.bottomProportion ? this.state.bottomProportion * this.state.shift : undefined,
-          }}
-        >
-          <img
-            src={HomeForeground}
-            className="w-100 h-100"
-            style={{
-              objectFit: "cover",
-              objectPosition: "center",
-              overflow: "hidden",
-            }}
-            alt="Foreground"
-          />
-        </div>
-        <div className="intro-text text-center position-absolute w-100" style={{ zIndex: 1 }}>
-          <TypeText text="Justin May - Data Scientist & Software Engineer" />
-          <p className="intro-subtext">Turning Data into Meaningful Insights. Let's build the future together.</p>
-          <button className="btn btn-primary mt-3">Explore My Work</button>
-        </div>
+      <div onMouseMove={this._onMouseMove}>
+        <Navbar />
+        <img src={HomeBackground} alt="Home Background" />
+        <img src={Ground} alt="Ground" />
+        <img src={HomeForeground} alt="Home Foreground" />
+        <TypeText />
       </div>
-    )
+    );
   }
 }
 
